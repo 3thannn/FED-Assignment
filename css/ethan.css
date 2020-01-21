@@ -1,0 +1,27 @@
+.itemheader {
+  padding-left: 50px;
+}
+.itemheadercontent
+{
+    font-family: fantasy;
+    font-size:20px;
+    text-align: left;
+}
+.infobutton{
+  font-size: 10px;
+  font-family: courier;
+  font-weight: bold;
+  text-align: center;
+}
+.row{
+  height: 170px auto;
+}
+
+.infocontent{
+  font-family:courier;
+  font-size: 14px;
+  text-align: left;
+  padding-right: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
