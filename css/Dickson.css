@@ -123,3 +123,6 @@ header .overlay {
   text-decoration: none;
   cursor: pointer;
 }
+.modal-img{
+  width: 300px;
+}

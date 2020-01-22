@@ -1,0 +1,70 @@
+#quote {
+    background-repeat: repeat;
+    overflow: hidden;
+    position: relative;
+}
+.overlayText {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    color: white;
+    font-size: 100px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+/* This is just some CSS styling to make the video fill 100% of its div */
+.videoContainer {
+    height:100vh;
+    width:100%;
+    overflow: hidden;
+}
+.videoContainer video {
+    min-width: 100%;
+    min-height: 100%;
+}
+.landingjumbotron{
+  height:25vh;
+
+}
+
+.landingdiv{
+  height:75vh;
+}
+
+.itemheader {
+  padding-left: 50px;
+
+}
+.itemheadercontent
+{
+    font-family: fantasy;
+    font-size:27px;
+    text-align: center;
+}
+.infobutton{
+  font-size: 14px;
+  font-family: courier;
+  font-weight: bold;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.row{
+  height: 170px auto;
+}
+
+.infocontent{
+  font-family:courier;
+  font-size: 18px;
+  text-align: left;
+  padding-right: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+.buttonrow{
+  padding-left: 50px;
+  text-align: left;
+}
