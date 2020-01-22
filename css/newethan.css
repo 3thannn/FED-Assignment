@@ -30,13 +30,15 @@
 }
 
 .landingdiv{
-  height:75vh;
+  height:50vh;
+  padding-top: 50px;
 }
 
 .itemheader {
   padding-left: 50px;
 
 }
+
 .itemheadercontent
 {
     font-family: fantasy;
@@ -67,4 +69,32 @@
 .buttonrow{
   padding-left: 50px;
   text-align: left;
+}
+.activityinfoheader{
+  font-family: fantasy;
+  font-size:35px;
+  text-align: center;
+}
+#knowmoreaboutrunning{
+
+  background-color: lightgrey;
+}
+.knowmorecontent{
+  height:400px;
+}
+.knowmoretext{
+  background-color: white;
+  height:100px auto;
+}
+.fit-image{
+width: 100%;
+object-fit: cover;
+}
+.showcase .showcase-text {
+  padding: 3rem;
+}
+
+.showcase .showcase-img {
+  min-height: 30rem;
+  background-size: cover;
 }
