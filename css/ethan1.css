@@ -1,3 +1,7 @@
 .titleheader{
-  background-image:url(../images/ethan/ethan1/header.jpg;)
+  background:url('https://s.yimg.com/ny/api/res/1.2/1ljBPU2YPV9StuYFUL9LXw--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAwO2lsPXBsYW5l/http://media.zenfs.com/en_us/News/Reuters/2015-11-23T014014Z_1825078894_GF20000070362_RTRMADP_3_SINGAPORE-ECONOMY-GDP.JPG.cf.jpg');
+  height: 250px;
+  width: 100%;
+  background-repeat: no-repeat;
+
 }
