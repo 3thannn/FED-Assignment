@@ -1,17 +1,10 @@
-//Var
-var modal = document.getElementById("myModal1");
-var btn = document.getElementById("modal1-btn");
-var span = document.getElementsByClassName("close")[0];
+//Preload function
+$("#section4-1").hide();
+$("#section5-1").hide();
+$("#Abdul").hide();
 
 //Function
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-span.onclick = function() {
-  modal.style.display = "none";
-}
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+function ShowAbdul(){
+  $("#section4-1").toggle(1000);
+  $("#Abdul").fadeToggle("slow");
 }
