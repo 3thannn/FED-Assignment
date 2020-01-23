@@ -65,14 +65,14 @@ header .overlay {
   font-size: 20px;
   background-image: url("https://www.arup.com/-/media/arup/images/projects/s/singapore-sports-hub/sport-singapore-sports-hub-stadium-seating-2000x1125.jpg?h=1125&w=2000&hash=4C0EC4198FD1AD2038F2A93A2A6005E8");
   background-size: cover;
-  height: 730px;
+  height: 700px;
 }
 
 .teamsg{
   font-family: 'Nunito', sans-serif;
   position: absolute;
   top: 120%;
-  left: 10%;
+  left: 3%;
   right:50%;
   background-color: white;
   text-align: justify;
@@ -81,7 +81,8 @@ header .overlay {
   padding-top: 50px;
   padding-bottom: 50px;
   border-top: 5px solid red;
-
+  min-width: 700px;
+  max-height: 700px;
 }
 
 .teamsg h1{
