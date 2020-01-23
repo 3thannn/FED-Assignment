@@ -1,34 +1,17 @@
-.headerwallpaper{
-  background: url('https://images.pexels.com/photos/325790/pexels-photo-325790.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-.landingjumbotron{
-  height:25vh;
-
-}
-
-.landingdiv{
-  height:75vh;
-}
-
 .itemheader {
   padding-left: 50px;
-
 }
 .itemheadercontent
 {
     font-family: fantasy;
-    font-size:27px;
-    text-align: center;
+    font-size:20px;
+    text-align: left;
 }
 .infobutton{
-  font-size: 14px;
+  font-size: 10px;
   font-family: courier;
   font-weight: bold;
   text-align: center;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 .row{
   height: 170px auto;
@@ -36,14 +19,9 @@
 
 .infocontent{
   font-family:courier;
-  font-size: 18px;
+  font-size: 14px;
   text-align: left;
   padding-right: 100px;
   padding-top: 20px;
   padding-bottom: 20px;
-
-}
-.buttonrow{
-  padding-left: 50px;
-  text-align: left;
 }
