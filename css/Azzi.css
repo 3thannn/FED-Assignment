@@ -1,0 +1,91 @@
+/*==================== Header ====================*/
+header {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+  font-family:fantasy;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}
+
+.section{
+  padding: 5% 0;
+}
+
+
+
+/*====================Section 1 ====================*/
+
+.section1{
+
+}
+
+#section1{
+  font-size: 20px;
+  background-image: url("https://www.arup.com/-/media/arup/images/projects/s/singapore-sports-hub/sport-singapore-sports-hub-stadium-seating-2000x1125.jpg?h=1125&w=2000&hash=4C0EC4198FD1AD2038F2A93A2A6005E8");
+  background-size: cover;
+  height: 730px;
+}
+
+.teamsg{
+  font-family: 'Nunito', sans-serif;
+  position: absolute;
+  top: 120%;
+  left: 10%;
+  right:50%;
+  background-color: white;
+  text-align: justify;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-top: 5px solid red;
+
+}
+
+.teamsg h1{
+  font-family: 'Bangers', cursive;
+}
+
+/*==================================================*/
