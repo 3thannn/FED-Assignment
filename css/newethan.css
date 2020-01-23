@@ -70,10 +70,11 @@
   padding-left: 50px;
   text-align: left;
 }
-.activityinfoheader{
+.sectionheader{
   font-family: fantasy;
   font-size:35px;
   text-align: center;
+  height: auto;
 }
 #knowmoreaboutrunning{
 
@@ -97,4 +98,8 @@ object-fit: cover;
 .showcase .showcase-img {
   min-height: 30rem;
   background-size: cover;
+}
+.location{
+  text-align:center;
+  font-size:30px;
 }
