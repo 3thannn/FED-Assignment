@@ -33,7 +33,7 @@
         <div class="d-flex h-100 text-center align-items-center">
           <div class="w-100 text-white">
             <h1 class="display-3">GOLF</h1>
-            <p class="lead mb-0"></p>
+            <p class="lead mb-0">Define your moment</p>
           </div>
         </div>
       </div>
@@ -208,42 +208,42 @@
     <section id="section5">
       <div class="container box">
         <h2 class="title text-center section-header">QUIZ ON GOLF CLUBS</h2>
-        <form action="index.html" method="post" onsubmit="">
+        <form method="get" id="quiz" onsubmit="quizValidation()">
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="user-info-name">Name:</label>
-              <input type="text" name="user-name" placeholder="Enter name here..." class="form-control">
+              <input type="text" name="user-name" id="user-name" placeholder="Enter name here..." class="form-control" required>
             </div>
             <div class="form-group col-md-6">
               <label for="user-info-name">Email:</label>
-              <input type="email" name="user-email" placeholder="Enter email here..." class="form-control">
+              <input type="email" name="user-email" id="user-email" placeholder="Enter email here..." class="form-control" required>
           </div>
         </div>
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="question1">What are the different types of clubs[multiple answer]?</label><br>
-              <input type="checkbox" name="clubs" value="woods"> Woods <br>
+              <input type="checkbox" name="clubs" class="clubs" value="woods"> Woods <br>
               <input type="checkbox" name="clubs" value="iron"> Iron <br>
               <input type="checkbox" name="clubs" value="wedges"> Wedges <br>
               <input type="checkbox" name="clubs" value="driver"> Driver <br>
             </div>
             <div class="form-group col-md-6">
               <label for="question2">What is the maximum amount of clubs you can bring to a game?</label><br>
-              <input type="radio" name="max-amount-clubs" value="2" class="Custom-control-input"> 2 <br>
-              <input type="radio" name="max-amount-clubs" value="14" class="Custom-control-input"> 14 <br>
-              <input type="radio" name="max-amount-clubs" value="11" class="Custom-control-input"> 11 <br>
-              <input type="radio" name="max-amount-clubs" value="nill" class="Custom-control-input"> Non of the above <br>
+              <input type="radio" name="max-amount-clubs" value="2" class="Custom-control-input" required> 2 <br>
+              <input type="radio" name="max-amount-clubs" value="14" class="Custom-control-input" required> 14 <br>
+              <input type="radio" name="max-amount-clubs" value="11" class="Custom-control-input" required> 11 <br>
+              <input type="radio" name="max-amount-clubs" value="nill" class="Custom-control-input" required> Non of the above <br>
             </div>
           </div>
 
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="question3">How much is the most expensive club?</label> <br>
-              <input type="number" name="expensive-clubs" min="0" max="181000" placeholder="$0" class="form-control">
+              <input type="number" name="expensive-clubs" min="0" max="181000" placeholder="$0" class="form-control" required>
             </div>
             <div class="form-group col-md-6">
               <label for="question4">Which is a golf club brand?</label>
-              <select class="form-control" name="club-brand">
+              <select class="form-control" name="club-brand" required>
                 <option>Callaway</option>
                 <option>Aviana Boyd</option>
                 <option>Jadon Bates</option>
@@ -264,7 +264,7 @@
 
     <section id="section5-1">
       <div class="container text-center">
-        <h1>Congratulations you got</h1>
+        <h1>Congratulations <span id="name"></span> you got <span id="marks"></span>/6</h1>
       </div>
     </section>
   </body>
