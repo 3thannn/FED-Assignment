@@ -9,21 +9,34 @@ function ShowAbdul(){
   $("#Abdul").fadeToggle("slow");
 }
 function quizValidation(){
-  var marks = 0;
+  var mark = 0;
+  var counter = 0;
   var name = document.getElementById("user-name").value;
+
+  //Question 1
   var question1 = [];
-  $.each($("input[name='clubs']:checked"), function(){
-      question1.push($(this).val());
-      //Dickson
-      for(var i in question1){
-        if(i == 0 || i == 1 || i == 2){
-          marks += 1;
-        }
-      }
-  });
-  var question2 = 
-  alert(marks);
+  $(':checkbox:checked').each(function(i){
+    question1[i] = $(this).val();
+    if(question1[i]=="clubs" || question1[i]=="iron" || question1[i]=="wedges"){
+      mark += 1;
+    }
+    else if(question1[i]=="driver"){
+      mark = 0;
+    }
+  });//Dickson Kuan
+
+  //Question2
+  var radioValue = $("input[name='max-amount-clubs']:checked").val();
+  if(radioValue == "14"){
+      mark += 1;
+  }
+
+  //Question3
+  
+
   $("#section5-1").fadeIn("slow");
+  document.getElementById("name").innerHTML = name;
+  document.getElementById("marks").innerHTML = mark;
   window.location.hash = "#section5-1";
 }
 
