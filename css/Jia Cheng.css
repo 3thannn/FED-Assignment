@@ -1,0 +1,33 @@
+body {
+
+}
+
+.visual-graphic {
+    height: 500px;
+    background-image: url("https://www.straitstimes.com/sites/default/files/styles/xxx_large/public/articles/2016/04/03/35130924.3_37818322_-_20_03_2016_-_pixschooling14.jpg?itok=V2p98FRW&timestamp=1459646741");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+#visual-graphic-text {
+    margin: 10% auto;
+}
+
+.information {
+    border: 5px solid darkblue;
+}
+
+.types {
+    margin: 1em 0 1em 0;
+}
+
+.types-img {
+    max-width: 100%;
+    padding: 0 1em 1em 1em;
+}
+
+h1, h3 {
+    padding: 1em 1em 1em 1em;
+}
