@@ -1,5 +1,6 @@
 //Preload function
 $("#section4-1").hide();
+$("#section5-1").hide();
 $("#Abdul").hide();
 
 //Function

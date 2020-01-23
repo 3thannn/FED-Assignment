@@ -158,9 +158,11 @@
     </section>
 
     <section id="section3">
-      <div class="container-fluid text-white text-center" id="s3-content">
-        <h2 id="s3-quote"><i>"Consistency is key to winning"</i></h2>
-        <h4>- Abdul Hadi</h4>
+      <div class="container-fluid text-white " id="s3-content">
+        <div id="s3-quote">
+          <h2><i>"Consistency is key to winning"</i></h2>
+          <h4>- Abdul Hadi</h4>
+        </div>
       </div>
     </section>
 
@@ -206,14 +208,63 @@
     <section id="section5">
       <div class="container box">
         <h2 class="title text-center section-header">QUIZ ON GOLF CLUBS</h2>
-        <form action="index.html" method="post">
+        <form action="index.html" method="post" onsubmit="">
           <div class="form-row">
             <div class="form-group col-md-6">
-              <label for="question1">How many golf clubs are there?</label>
-              <input type="number" name="no-golf-clubs" value="1" id="no-golf-clubs" class="form-control">
+              <label for="user-info-name">Name:</label>
+              <input type="text" name="user-name" placeholder="Enter name here..." class="form-control">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="user-info-name">Email:</label>
+              <input type="email" name="user-email" placeholder="Enter email here..." class="form-control">
+          </div>
+        </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="question1">What are the different types of clubs[multiple answer]?</label><br>
+              <input type="checkbox" name="clubs" value="woods"> Woods <br>
+              <input type="checkbox" name="clubs" value="iron"> Iron <br>
+              <input type="checkbox" name="clubs" value="wedges"> Wedges <br>
+              <input type="checkbox" name="clubs" value="driver"> Driver <br>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="question2">What is the maximum amount of clubs you can bring to a game?</label><br>
+              <input type="radio" name="max-amount-clubs" value="2" class="Custom-control-input"> 2 <br>
+              <input type="radio" name="max-amount-clubs" value="14" class="Custom-control-input"> 14 <br>
+              <input type="radio" name="max-amount-clubs" value="11" class="Custom-control-input"> 11 <br>
+              <input type="radio" name="max-amount-clubs" value="nill" class="Custom-control-input"> Non of the above <br>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="question3">How much is the most expensive club?</label> <br>
+              <input type="number" name="expensive-clubs" min="0" max="181000" placeholder="$0" class="form-control">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="question4">Which is a golf club brand?</label>
+              <select class="form-control" name="club-brand">
+                <option>Callaway</option>
+                <option>Aviana Boyd</option>
+                <option>Jadon Bates</option>
+                <option>Angelika Foley</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <input type="submit" name="submit" value="Submit" class="btn btn-secondary">
+              <input type="reset" name="reset" value="reset" class="btn btn-secondary">
             </div>
           </div>
         </form>
+      </div>
+    </section>
+
+    <section id="section5-1">
+      <div class="container text-center">
+        <h1>Congratulations you got</h1>
       </div>
     </section>
   </body>

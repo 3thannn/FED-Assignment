@@ -8,6 +8,7 @@ header {
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
+  font-family:fantasy;
 }
 
 header video {
@@ -89,6 +90,7 @@ header .overlay {
 }
 #s3-quote{
   padding-top: 10%;
+  padding-left: 5%;
 }
 .s4-img{
   height: 200px;
