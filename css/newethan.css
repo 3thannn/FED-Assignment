@@ -99,7 +99,14 @@ object-fit: cover;
   min-height: 30rem;
   background-size: cover;
 }
-.location{
-  text-align:center;
-  font-size:30px;
+.locationinfo{
+  padding: 15px;
+}
+.locationtitle{
+  text-align: left;
+  font-size: 20px;
+}
+.locationtext{
+  text-align:left;
+  font-size: 15px;
 }
