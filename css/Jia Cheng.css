@@ -1,5 +1,4 @@
 body {
-
 }
 
 .visual-graphic {
@@ -30,4 +29,15 @@ body {
 
 h1, h3 {
     padding: 1em 1em 1em 1em;
+}
+
+.swimmer {
+    overflow: hidden;
+}
+
+.swimmer-info {
+    background-color: darkgrey;
+    color: black;
+    border-radius: 0.5em;
+    width: auto;
 }
