@@ -41,3 +41,6 @@ body{
   color: white;
   background-color: gray;
 }
+#min-web{
+  overflow: hidden;
+}
