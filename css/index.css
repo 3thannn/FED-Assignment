@@ -44,3 +44,7 @@ body{
 #min-web{
   overflow: hidden;
 }
+#info-footer:hover{
+  color: red;
+  font-size: 1.4em;
+}
