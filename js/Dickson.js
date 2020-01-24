@@ -1,13 +1,31 @@
+//Var
+var abdul = false;
+
 //Preload function
 $("#section4-1").hide();
 $("#section5-1").hide();
 $("#Abdul").hide();
 
 //Function
-function ShowAbdul(){
-  $("#section4-1").toggle(1000);
-  $("#Abdul").fadeToggle("slow");
+function DisplaySec4(time){
+  $("#section4-1").slideToggle(time);
 }
+
+function ShowAbdul(){
+  if(abdul == false){
+    DisplaySec4(0);
+    $("#Abdul").fadeToggle(2000);
+    abdul == true;
+  }
+  else{
+    $("#Abdul").fadeToggle(1000);
+    DisplaySec4(3000);
+    abdul = false;
+  }
+
+}
+
+//Quiz
 function quizValidation(){
   var mark = 0;
   var counter = 0;

@@ -25,16 +25,6 @@ body{
 #about-carousel{
   width: 75%;
 }
-#team-card{
-  width: 80%;
-}
-.team-pic{
-  height: 300px;
-  object-fit: cover;
-}
-.team-btn{
-  background-color: #FFFF;
-}
-.team-btn:hover{
-  background-color: #37474F;
+#Events{
+  background-color:#eeeded;
 }

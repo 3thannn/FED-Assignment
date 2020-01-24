@@ -87,13 +87,6 @@ header .overlay {
   object-fit: cover;
   padding-top: 10px;
 }
-.section{
-  padding: 5% 0;
-}
-.section-header{
-  padding-bottom: 4%;
-  text-transform: uppercase;
-}
 #s3-quote{
   padding-top: 10%;
   padding-left: 5%;
