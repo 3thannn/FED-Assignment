@@ -6,8 +6,18 @@ $(document).ready(function(){
 
 //Upcoming Events
 $("#swimming-btn").click(function(){
-  $("#swimming-pic").slideToggle().delay("3000");
+  $("#swimming-pic").slideToggle();
   $("#swimming-info").fadeToggle();
+});
+
+$("#yoga-btn").click(function(){
+  $("#yoga-pic").slideToggle();
+  $("#yoga-info").fadeToggle();
+});
+
+$("#esports-btn").click(function(){
+  $("#esports-pic").slideToggle();
+  $("#esports-info").fadeToggle();
 });
 
 //iframe

@@ -17,38 +17,14 @@
   <link href="css/style.css" rel="stylesheet">
   <!-- Font awesome -->
   <script src="https://kit.fontawesome.com/81978a7522.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky">
-    <div class="container">
-      <a class="navbar-brand" href="#">Sports In Singapore</a>
-      <a href="#About" onclick="hello()">  <span class="navbar-toggler-icon"></span></a>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#About">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Azzi.html">Atheletes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Locations</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <!--Navbar-->
+  <section id="navbar">
+    
+  </section>
 
   <!-- Landing Page -->
   <section>
@@ -67,13 +43,12 @@
   <!-- Section1 -->
   <section id="About">
     <div class="container box" id="about-carousel">
+      <h1 class="section-header text-center text-white">TOP NEWS</h1>
       <div class="row">
-        <div class="col">
-        </div>
+        <div class="col"></div>
         <div class="col-10">
           <div class="carousel slide " id="carousel" data-riden="carousel">
             <div class="carousel-inner">
-
               <div class="carousel-item active">
                 <img src="images\Carousel\joseph.jpg" class="w-100 d-block" alt="first slide">
                 <div class="carousel-caption d-none d-md-block">
@@ -103,10 +78,9 @@
             </a>
           </div>
         </div>
-        <div class="col">
+        <div class="col"></div>
         </div>
-        </div>
-    </div>
+      </div>
     </div>
     <br>
   </section>
@@ -132,7 +106,6 @@
                 <a href="#section1" class="btn btn-danger" id="yoga-btn">More Info</a>
               </div>
             </div>
-
             <div class="card text-center">
               <img src="images\Upcoming Event\swimming.jpg" alt="Swimming" class="w-100 card-img-top" id="swimming-pic">
               <div class="event-info box" id="swimming-info">
@@ -141,7 +114,6 @@
                 </p>
               </div>
             </div>
-
             <div class="card text-center">
               <div class="card-body">
                 <h5 class="card-title">Esports Festival</h5>
@@ -153,7 +125,7 @@
                     12 MAR,2020 - 1 April 2020
                   </span>
                 </p>
-                <a href="#section1" class="btn btn-danger">More Info</a>
+                <a href="#section1" class="btn btn-danger" id="esports-btn">More Info</a>
               </div>
             </div>
           </div>
@@ -167,7 +139,10 @@
 
           <div class="card-group">
             <div class="card text-center">
-              <img src="images\Upcoming Event\yoga.jpg" alt="yoga day" class="w-100 card-img-top">
+              <img src="images\Upcoming Event\yoga.jpg" alt="yoga day" class="w-100 card-img-top" id="yoga-pic">
+              <div class="event-info box" id="yoga-info">
+                <p>hello yoga</p>
+              </div>
             </div>
 
             <div class="card text-center">
@@ -186,7 +161,10 @@
             </div>
 
             <div class="card text-center">
-              <img src="images\Upcoming Event\eSports.jpg" alt="Esports" class="w-100 card-img-top h-100">
+              <img src="images\Upcoming Event\eSports.jpg" alt="Esports" class="w-100 card-img-top h-100" id="esports-pic">
+              <div class="event-info box" id="esports-info">
+                esports
+              </div>
             </div>
           </div>
         </div>
