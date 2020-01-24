@@ -28,3 +28,16 @@ body{
 #Events{
   background-color:#eeeded;
 }
+#more-info{
+  background-color: #201c1c;
+}
+#info-nav{
+  border-radius: 5px;
+}
+#info-nav ul li a{
+  color: black;
+}
+#info-nav ul li a:hover{
+  color: white;
+  background-color: gray;
+}
