@@ -32,8 +32,18 @@ function quizValidation(){
   }
 
   //Question3
-  
+  var question3 =  $("#expensive-clubs").val();
+  if(question3 == "181000"){
+    mark += 1;
+  }
 
+  //Question 4
+  var question4 = $("#question4").val()
+  if(question4 == "Callaway"){
+    mark += 1;
+  }
+
+  $("#section5").hide();
   $("#section5-1").fadeIn("slow");
   document.getElementById("name").innerHTML = name;
   document.getElementById("marks").innerHTML = mark;
@@ -43,4 +53,13 @@ function quizValidation(){
 //Listening Function
 $("#Dickson-Quiz").submit(function(){
   return false;
+});
+$( "#location" ).click(function() {
+  window.location.hash = "#section2";
+});
+$( "#golfers" ).click(function() {
+  window.location.hash = "#section4";
+});
+$( "#clubs" ).click(function() {
+  window.location.hash = "#section5";
 });
