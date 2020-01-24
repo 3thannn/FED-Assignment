@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Home page">
-  <meta name="author" content="">
+  <meta name="author" content="Minecraft Gods">
 
   <title>Home</title>
   <!-- Bootstrap core CSS -->
@@ -17,14 +17,15 @@
   <!-- Font awesome -->
   <script src="https://kit.fontawesome.com/81978a7522.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
   <!--w3 lib-->
-  <script src="https://www.w3schools.com/lib/w3.js"></script>
+  <script src="vendor/w3.js"></script>
 </head>
 
 <body>
   <!--Navbar-->
   <section id="navbar">
-	<div w3-include-html="header.html"></div>
+	<div w3-include-HTML="header.html"></div>
   </section>
 
   <!-- Landing Page -->
@@ -202,13 +203,16 @@
 
   <!--Footer-->
   <section id="footer">
-
+	<div w3-include-HTML="footer.html"></div>
   </section>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="js\script.js"></script>
+	<script>
+	w3.includeHTML();
+	</script>
 </body>
 
 </html>
