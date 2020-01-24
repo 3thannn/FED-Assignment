@@ -4,10 +4,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Home page">
+  <meta name="description" content="">
   <meta name="author" content="">
 
   <title>Home</title>
+  <script src="js/script.js"></script>
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -17,14 +18,12 @@
   <!-- Font awesome -->
   <script src="https://kit.fontawesome.com/81978a7522.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!--w3 lib-->
-  <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
 
 <body>
   <!--Navbar-->
   <section id="navbar">
-	<div w3-include-html="header.html"></div>
+
   </section>
 
   <!-- Landing Page -->
@@ -82,6 +81,7 @@
         <div class="col"></div>
         </div>
       </div>
+    </div>
     <br>
   </section>
 

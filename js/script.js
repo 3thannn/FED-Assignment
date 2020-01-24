@@ -1,6 +1,5 @@
-$(document).ready(function(){
-  $(".event-info").hide();
-});
+//Preload function
+$(".event-info").hide();
 
 //Listening function
 
