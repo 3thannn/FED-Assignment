@@ -1,13 +1,42 @@
-body {
+/*==================== Header ====================*/
+header {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
 }
 
-.visual-graphic {
-    height: 500px;
-    background-image: url("https://www.straitstimes.com/sites/default/files/styles/xxx_large/public/articles/2016/04/03/35130924.3_37818322_-_20_03_2016_-_pixschooling14.jpg?itok=V2p98FRW&timestamp=1459646741");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+header .container {
+    position: relative;
+    z-index: 2;
 }
 
 #visual-graphic-text {
@@ -32,12 +61,20 @@ h1, h3 {
 }
 
 .swimmer {
+    width: 50%;
+    height: auto;
     overflow: hidden;
 }
 
 .swimmer-info {
-    background-color: darkgrey;
-    color: black;
-    border-radius: 0.5em;
+    background-color: black;
+    border-radius: 1em;
+    color: white;
     width: auto;
+    opacity: 0.8;
+    padding: 0;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    filter: invert(100%);
 }
