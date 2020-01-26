@@ -67,6 +67,7 @@ function quizValidation(){
   document.getElementById("marks").innerHTML = mark;
   window.location.hash = "#section5-1";
 }
+//End of quiz
 
 //Listening Function
 $("#Dickson-Quiz").submit(function(){

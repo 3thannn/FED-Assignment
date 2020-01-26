@@ -20,6 +20,9 @@ $("#esports-btn").click(function(){
 });
 
 //iframe
+$("running-web").click(function(){
+  $("#info-footer").attr('scrolling', 'yes');
+});
 $("#running-web").click(function(){
   $("#min-web").attr('src', 'ethan.html');
   $("#info-footer").attr('href', 'ethan.html');
