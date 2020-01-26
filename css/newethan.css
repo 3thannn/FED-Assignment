@@ -101,6 +101,7 @@ object-fit: cover;
 }
 .locationinfo{
   padding: 15px;
+  padding-top: 40px;
 }
 .locationtitle{
   text-align: left;
