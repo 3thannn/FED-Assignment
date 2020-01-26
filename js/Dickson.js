@@ -1,13 +1,31 @@
+//Var
+var abdul = false;
+
 //Preload function
 $("#section4-1").hide();
 $("#section5-1").hide();
 $("#Abdul").hide();
 
 //Function
-function ShowAbdul(){
-  $("#section4-1").toggle(1000);
-  $("#Abdul").fadeToggle("slow");
+function DisplaySec4(time){
+  $("#section4-1").slideToggle(time);
 }
+
+function ShowAbdul(){
+  if(abdul == false){
+    DisplaySec4(0);
+    $("#Abdul").fadeToggle(2000);
+    abdul == true;
+  }
+  else{
+    $("#Abdul").fadeToggle(1000);
+    DisplaySec4(3000);
+    abdul = false;
+  }
+
+}
+
+//Quiz
 function quizValidation(){
   var mark = 0;
   var counter = 0;
@@ -32,8 +50,18 @@ function quizValidation(){
   }
 
   //Question3
-  
+  var question3 =  $("#expensive-clubs").val();
+  if(question3 == "181000"){
+    mark += 1;
+  }
 
+  //Question 4
+  var question4 = $("#question4").val()
+  if(question4 == "Callaway"){
+    mark += 1;
+  }
+
+  $("#section5").hide();
   $("#section5-1").fadeIn("slow");
   document.getElementById("name").innerHTML = name;
   document.getElementById("marks").innerHTML = mark;
@@ -43,4 +71,13 @@ function quizValidation(){
 //Listening Function
 $("#Dickson-Quiz").submit(function(){
   return false;
+});
+$( "#location" ).click(function() {
+  window.location.hash = "#section2";
+});
+$( "#golfers" ).click(function() {
+  window.location.hash = "#section4";
+});
+$( "#clubs" ).click(function() {
+  window.location.hash = "#section5";
 });

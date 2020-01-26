@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 body{
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -83,13 +86,6 @@ header .overlay {
   height: 350px;
   object-fit: cover;
   padding-top: 10px;
-}
-.section{
-  padding: 5% 0;
-}
-.section-header{
-  padding-bottom: 4%;
-  text-transform: uppercase;
 }
 #s3-quote{
   padding-top: 10%;

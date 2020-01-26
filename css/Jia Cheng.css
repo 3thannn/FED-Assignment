@@ -1,0 +1,80 @@
+/*==================== Header ====================*/
+header {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+header .container {
+    position: relative;
+    z-index: 2;
+}
+
+#visual-graphic-text {
+    margin: 10% auto;
+}
+
+.information {
+    border: 5px solid darkblue;
+}
+
+.types {
+    margin: 1em 0 1em 0;
+}
+
+.types-img {
+    max-width: 100%;
+    padding: 0 1em 1em 1em;
+}
+
+h1, h3 {
+    padding: 1em 1em 1em 1em;
+}
+
+.swimmer {
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+}
+
+.swimmer-info {
+    background-color: black;
+    border-radius: 1em;
+    color: white;
+    width: auto;
+    opacity: 0.8;
+    padding: 0;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    filter: invert(100%);
+}
