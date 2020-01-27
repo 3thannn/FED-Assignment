@@ -6,8 +6,9 @@
     <meta name="description" content="">
     <meta name="author" content="Dickson">
 
+    <link rel="shortcut icon" href="images\GolfIndex.png" type="image/x-icon"/>
     <title>GOLF</title>
-    <script src="js/script.js"></script>
+
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -16,7 +17,7 @@
     <link href="css/style.css" rel="stylesheet">
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/81978a7522.js" crossorigin="anonymous"></script>
-	  
+
 	<!--w3 lib-->
   	<script src="vendor/w3.js"></script>
   </head>
@@ -178,19 +179,19 @@
       <div class="container-fluid">
         <div class="d-flex flex-row justify-content-center">
           <div class="p-2">
-            <input type="image" name="Abdul Hai" src="images\Dickson\AbdulHadi.jpg" class="s4-img" onclick="ShowAbdul()">
+            <input type="image" name="Abdul Hai" src="images\Dickson\AbdulHadi.jpg" class="s4-img" onclick="ShowGolfer('Abdul')">
           </div>
           <div class="p-2">
-            <input type="image" name="Mardan Marmat" src="images\Dickson\Mardan Marmat.jpg" class="s4-img" onclick="">
+            <input type="image" name="Mardan Marmat" src="images\Dickson\Mardan Marmat.jpg" class="s4-img" onclick="ShowGolfer('Mardan')">
           </div>
           <div class="p-2">
-            <input type="image" name="Quincy Quek" src="images\Dickson\quincy-quek.jpg" class="s4-img" onclick="">
+            <input type="image" name="Quincy Quek" src="images\Dickson\quincy-quek.jpg" class="s4-img" onclick="ShowGolfer('Quincy')">
           </div>
         </div>
       </div>
     </section>
     <section id="section4-1">
-      <div class="container-fluid box">
+      <div class="container-fluid box mw-100">
         <div class="row" id="Abdul">
           <div class="col-md-2"></div>
           <div class="col-md-8">
@@ -209,7 +210,44 @@
           </div>
           <div class="col-md-2"></div>
         </div>
+
+        <div class="row" id="Mardan">
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+            <div class="media">
+              <img src="images\Dickson\Mardan Marmat.jpg" alt="Mardan Marmat" class="mr-3 s41-img">
+              <div class="media-body">
+                <h5 class="media-body">Mardan Marmat</h5>
+                <p><b>Age:</b> 52</p>
+                <p><b>introduction: </b> <br>
+                  Mamat was born in Singapore. He turned professional in 1994.
+
+                  Mamat plays on the Asian Tour, where he won for the first time at the 2004 Royal Challenge Indian Open.[1] In 2006 he won the OSIM Singapore Masters, which was co-sanctioned by the Asian Tour and the European Tour. This made him the first player from Singapore to win a European Tour event, and earned him a two-year exemption into the European Tour.[2]
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+
+        <div class="row" id="Quincy">
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+            <div class="media">
+              <img src="images\Dickson\quincy-quek.jpg" alt="Quincy Queck" class="mr-3 s41-img">
+              <div class="media-body">
+                <h5 class="media-body">Mardan Marmat</h5>
+                <p><b>Age:</b> 32</p>
+                <p><b>introduction: </b> <br>
+                  Quincy Quek has endured a tumultuous last few years that have been riddled with missed chances, but five years and 38 starts later, the 32-year-old's patience was rewarded when he clinched his first tour title in the Haikou Classic at Mission Hills Haikou yesterday.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2"></div>
+        </div>
       </div>
+      <hr>
     </section>
 
     <section id="section5">
@@ -274,7 +312,7 @@
         <h1 class="section-header">Congratulations <span id="name"></span> you got <span id="marks"></span>/6!</h1>
       </div>
     </section>
-		
+
 	<div w3-include-HTML="footer.html"></div>
   </body>
   <script src="vendor/jquery/jquery.min.js"></script>
@@ -282,6 +320,6 @@
   <script src="js\Dickson.js">
   </script>
 	  <script>
-	w3.includeHTML();
+	   w3.includeHTML();
 	</script>
 </html>
