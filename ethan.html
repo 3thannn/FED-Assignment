@@ -291,10 +291,13 @@
     </div>
     <br />
     <br />
+    <br />
     <div class="container">
       <!-- Trigger the modal with a button -->
+      <h style="font-size: 25px;">Take this small quiz to help us get to know you better! &nbsp;</h>
       <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Click Me!</button>
-
+      <br />
+      <br />
       <!-- Modal -->
       <div id="myModal" class="modal fade" role="dialog">
         <div class="modal-dialog">
@@ -307,47 +310,68 @@
             <form>
               <label class="radio">
                 Do You own a pair of running shoes:
-                  <input type ="radio" name ="ownshoes" value="yes" />
+                  <input type="radio" id="shoes1" name ="ownshoes" value="yes" />
                   Yes
               </label>
               <label class ="radio">
-                  <input type ="radio" name ="ownshoes" value="no" />
+                  <input type ="radio" id="shoes2" name ="ownshoes" value="no" />
                   No
               </label>
               <label class="radio">
                 How often do you run a month:
                 <br />
-                <input type="radio" name="oftenrun" value=1 />
+                <input type="radio" id="run1" name="oftenrun" value=1 />
                 Once
               </label>
               <br />
               <label class="radio">
-                <input type="radio" name ="oftenrun" value=2 />
+                <input type="radio" id="run2" name ="oftenrun" value=2 />
                 More than once
               </label>
               <br />
               <label class="radio">
-                <input type="radio" name ="oftenrun" value=3 />
+                <input type="radio" id="run3" name ="oftenrun" value=3 />
                 More than once a week
               </label>
+              <br />
+              <label class="radio">
+                <input type="radio" id="run4" name ="oftenrun" value=4 />
+                Not at all
+              </label>
+              <br />
               <label class="number">
-                Distance Per Run(KM):
-                <input type="number" name="distance" />
+                Distance Per Run (KM):
+                <input type="number" id="rundist" name="distance" />
+              </label>
+              <label class="radio">
+                Would you recommend running as a daily/weekly routine to other people?
+                <br />
+                <input type="radio" id="recommend1" name="recommend" value="yes" />
+                Yes
+              </label>
+              <label class="radio">
+                <input type="radio" id="recommend2" name="recommend" value="no" />
+                no
               </label>
 
             </form>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-success" data-dismiss="modal" onclick="readFormInputs()">Submit</button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
     </div>
     </div>
+    <div>
+      <p id="formcontent">
+      </p>
+    </div>
     <br />
 
     <div class="container" style="width:100vw">
-      <h>Please take a minute to fill up this feedback form. Your feedback is highly appreciated!</h>
+      <h style="font-size:20px;">Also, please take a minute to fill up this feedback form. Your feedback is highly appreciated!</h>
       <br />
       <br />
       <form method="post">
@@ -377,8 +401,13 @@
       </form>
       </div>
     <!-- Footer -->
-    <div w3-include-html="footer.html"></div>
-      <!-- Bootstrap core JavaScript -->
+    <div class="row">
+        <div w3-include-html="footer.html"></div>
+    </div>
+    <script>
+        w3.includeHTML();
+    </script>
+    <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/81978a7522.js" crossorigin="anonymous"></script>
 
