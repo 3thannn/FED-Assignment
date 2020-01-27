@@ -53,8 +53,6 @@ header .overlay {
   padding: 5% 0;
 }
 
-
-
 /*====================Section 1 ====================*/
 
 .section1{
@@ -90,3 +88,57 @@ header .overlay {
 }
 
 /*==================================================*/
+
+/*====================Section 2 ====================*/
+.title{
+  display:inline-block;
+  text-align: center;
+  background: white;
+  margin-left: 45%;
+  border-top: 5px solid red;
+
+}
+
+.title h1{
+    font-family: 'Bangers', cursive;
+
+}
+
+
+
+#section2{
+  background-image:url("https://i.imgur.com/sNhKMZ0.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+
+}
+
+.card-header{
+  background-color: white;
+  border-top: 5px solid red;
+  text-align: center;
+
+}
+
+
+.card-header h1{
+  font-family: 'Bangers', cursive;
+  font-size:30px;
+  text-align: center;
+  color:white;
+}
+
+.card{
+  border-top: none;
+  border-bottom: none;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+
+
+.card-img-top {
+    width: 100%;
+    height:250px;
+}
