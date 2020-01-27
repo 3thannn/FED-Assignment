@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 #header{
   background: url('https://www.apactix.com/assets/img/v.-Venue-listing-page-image-3e9a72fc78.jpg') black no-repeat center center scroll;
   background-position: center;
@@ -13,7 +17,7 @@
     color: #FFFFFF;
     background-color: red;
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: 80%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -28,7 +32,7 @@
     color: #FFFFFF;
     background-color: red;
     position: absolute;
-    top: 30%;
+    top: 25%;
     left: 80%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -42,7 +46,7 @@
     color: #FFFFFF;
     background-color: red;
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 80%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -56,7 +60,7 @@
     color: #FFFFFF;
     background-color: red;
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 80%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -71,7 +75,7 @@
     color: #FFFFFF;
     background-color: red;
     position: absolute;
-    top: 60%;
+    top: 55%;
     left: 80%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -220,3 +224,11 @@ tr, th, td {
   .prev, .next,.text {font-size: 11px}
 }
 .mySlides {display: none}
+
+
+form{
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 30px;
+  border: 10px solid red;
+  width:70%; margin: 1cm auto 1cm;
+}
