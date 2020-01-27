@@ -8,7 +8,9 @@ $("#section4-1").hide();
 $("#section5-1").hide();
 HideAllGolfers();
 
-//Function
+//Function =================================
+
+//Function Section 4 golfers
 function HideAllGolfers(){
   $("#Abdul").hide();
   $("#Mardan").hide();
@@ -74,13 +76,14 @@ function ShowGolfer(golfer){
 
   }
 }
+//End of Function Section 4 golfers
 
 //Quiz
 function quizValidation(){
   var mark = 0;
   var counter = 0;
   var name = document.getElementById("user-name").value;
-
+  
   //Question 1
   var question1 = [];
   $(':checkbox:checked').each(function(i){
