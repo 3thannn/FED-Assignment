@@ -110,13 +110,13 @@ object-fit: cover;
 .locationtitle{
   text-align: Left;
   margin: 50px 0;
-  font-size: 24px;
+  font-size: 30px;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 .locationtext{
   text-align:left;
-  font-size: 15px;
+  font-size: 18px;
 }
 .title-arch {
   text-align: center;
