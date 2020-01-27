@@ -7,8 +7,24 @@ var displaysec4 = false;
 $("#section4-1").hide();
 $("#section5-1").hide();
 HideAllGolfers();
+IncreasingNumbers();
 
 //Function =================================
+
+//Increasing numbers
+function IncreasingNumbers(){
+  $('.count').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 3000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+});
+}
 
 //Function Section 4 golfers
 function HideAllGolfers(){
@@ -83,7 +99,7 @@ function quizValidation(){
   var mark = 0;
   var counter = 0;
   var name = document.getElementById("user-name").value;
-  
+
   //Question 1
   var question1 = [];
   $(':checkbox:checked').each(function(i){
