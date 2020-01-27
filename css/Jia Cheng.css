@@ -37,23 +37,43 @@ header .overlay {
 header .container {
     position: relative;
     z-index: 2;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    0% { top: 50px; }
+    50% { top: -50px; }
+    100% { top: 50px; }
 }
 
 #visual-graphic-text {
     margin: 10% auto;
 }
 
-.information {
-    border: 5px solid darkblue;
-}
-
 .types {
     margin: 1em 0 1em 0;
+}
+
+.strokes {
+    text-align: justify;
+    margin: 0 1em 0 1em;
 }
 
 .types-img {
     max-width: 100%;
     padding: 0 1em 1em 1em;
+    transition: transform 1s ease-in-out;
+}
+
+.types-1:hover, .types-1:focus {
+    transform: rotate(10deg) scale(1.2) translateY(-25px);
+}
+
+.types-2:hover, .types-2:focus {
+    transform: rotate(-10deg) scale(1.2) translateY(-25px);
 }
 
 h1, h3 {
@@ -61,14 +81,6 @@ h1, h3 {
 }
 
 .swimmer {
-    width: 50%;
-    height: auto;
-    overflow: hidden;
-}
-
-.swimmer-info {
-    background-color: black;
-    border-radius: 1em;
     color: white;
     width: auto;
     opacity: 0.8;
@@ -77,4 +89,13 @@ h1, h3 {
 
 .carousel-control-prev, .carousel-control-next {
     filter: invert(100%);
+}
+
+.links {
+    font-weight: bold;
+    transition: 1s;
+}
+
+.links:hover {
+    color: red;
 }
