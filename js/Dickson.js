@@ -1,36 +1,89 @@
-//Var
 var abdul = false;
+var mardan = false;
+var quincy = false;
+var displaysec4 = false;
 
 //Preload function
 $("#section4-1").hide();
 $("#section5-1").hide();
-$("#Abdul").hide();
+HideAllGolfers();
 
-//Function
-function DisplaySec4(time){
-  $("#section4-1").slideToggle(time);
+//Function =================================
+
+//Function Section 4 golfers
+function HideAllGolfers(){
+  $("#Abdul").hide();
+  $("#Mardan").hide();
+  $("#Quincy").hide();
 }
 
-function ShowAbdul(){
-  if(abdul == false){
-    DisplaySec4(0);
-    $("#Abdul").fadeToggle(2000);
-    abdul == true;
-  }
-  else{
-    $("#Abdul").fadeToggle(1000);
-    DisplaySec4(3000);
-    abdul = false;
-  }
-
+function HideSec4(golfer){
+  $("#"+golfer).fadeOut(500, function(){
+    $("#section4-1").slideUp(500);
+  });
 }
+
+function DisplaySec4(golfer){
+  $("#section4-1").slideDown(500, function(){
+    $("#"+golfer).fadeIn(1000);
+  });
+}
+
+function ShowGolfer(golfer){
+  switch (golfer) {
+    case "Abdul":
+      if(abdul == true){
+        HideSec4(golfer);
+        abdul = false;
+      }
+      else{
+        HideAllGolfers();
+        abdul = false;
+        mardan = false;
+        quincy = false;
+        DisplaySec4(golfer);
+        abdul = displaysec4 = true;
+      }
+      break;
+    case "Mardan":
+      if(mardan == true){
+        HideSec4(golfer);
+        mardan = false;
+      }
+      else{
+        HideAllGolfers();
+        abdul = false;
+        mardan = false;
+        quincy = false;
+        DisplaySec4(golfer);
+        mardan = displaysec4 = true;
+      }
+      break;
+    case "Quincy":
+      if(quincy == true){
+        HideSec4(golfer);
+        quincy = false;
+      }
+      else{
+        HideAllGolfers();
+        abdul = false;
+        mardan = false;
+        quincy = false;
+        DisplaySec4(golfer);
+        quincy = displaysec4 = true;
+      }
+      break;
+
+  }
+}
+//End of Function Section 4 golfers
 
 //Quiz
 function quizValidation(){
   var mark = 0;
   var counter = 0;
   var name = document.getElementById("user-name").value;
-
+  
   //Question 1
   var question1 = [];
   $(':checkbox:checked').each(function(i){

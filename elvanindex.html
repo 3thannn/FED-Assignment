@@ -14,39 +14,16 @@
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/Elvanindex.css" rel="stylesheet">
+    <script src="vendor/w3.js"></script>
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/81978a7522.js" crossorigin="anonymous"></script>
     <title>Basketball</title>
   </head>
   <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky">
-      <div class="container">
-        <a class="navbar-brand" href="#">Sports In Singapore</a>
-        <a href="#About" onclick="hello()">  <span class="navbar-toggler-icon"></span></a>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#About">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">History</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Locations</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <div>
+        <div w3-include-HTML="header.html"></div>
+    </div>
 
 
     <section id="header">
@@ -352,9 +329,30 @@
                 </div>
             </section>
         </div>
+
+
+
+
+    </div id="Form">
+
+
+
+
+
+    <div>
+
     </div>
 
     <a href="#header"><button id="myBtn" style="color: white">Back to top</button></a>
+
+    <div class="w3-panel w3-green w3-large">
+        <p w3-include-html="footer.html"></p>
+    </div>
+
+
+    <script>
+        w3.includeHTML();
+    </script>
 
   </body>
 </html>
