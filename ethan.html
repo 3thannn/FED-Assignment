@@ -357,7 +357,7 @@
             </form>
           </div>
           <div class="modal-footer">
-            <button type="submit" class="btn btn-success" data-dismiss="modal" onclick="readFormInputs()">Submit</button>
+            <input type="submit" class="btn btn-success" data-dismiss="modal" onclick="readFormInputs()">
             <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
           </div>
         </div>
@@ -365,7 +365,8 @@
     </div>
     </div>
     <div>
-      <p id="formcontent">
+      <p id="formcontent" style ="text-align:center; color:green; font-size: 23px;">
+
       </p>
     </div>
     <br />
@@ -389,7 +390,7 @@
               <input type="range" id="rating" class="form-control" value="" required/>
             </div>
             <div class="form-group">
-              <input type="submit" id="submit" />
+              <input type="submit" id="submit" onclick="feedbackdone()"/>
             </div>
           </div>
           <div class ="col-6">
@@ -415,6 +416,7 @@
     <!-- Bootstrap JS -->
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/ethan.js"></script>
     <script>
         w3.includeHTML();
     </script>
