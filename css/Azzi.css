@@ -131,7 +131,7 @@ header .overlay {
 
 .card{
   border-top: none;
-  border-bottom: none;
+  border-botom: 6px solid grey;
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   border-radius: 0px;
