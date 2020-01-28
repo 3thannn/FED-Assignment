@@ -44,9 +44,17 @@ header .container {
 }
 
 @keyframes example {
-    0% { top: 50px; }
-    50% { top: -50px; }
-    100% { top: 50px; }
+    0% {
+        top: 50px;
+    }
+
+    50% {
+        top: -50px;
+    }
+
+    100% {
+        top: 50px;
+    }
 }
 
 #visual-graphic-text {
@@ -87,6 +95,12 @@ h1, h3 {
     padding: 0;
 }
 
+.swimmer-info {
+    background-color: darkblue;
+    border-radius: 0.5em;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
 .carousel-control-prev, .carousel-control-next {
     filter: invert(100%);
 }
@@ -98,4 +112,14 @@ h1, h3 {
 
 .links:hover {
     color: red;
+}
+
+form {
+    border: 5px solid darkblue;
+    padding: 10px 0 10px 0;
+}
+
+.contact {
+    display: inline-block;
+    width: 150px;
 }
