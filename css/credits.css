@@ -1,5 +1,5 @@
 #team-card{
-  width: 80%;
+  width: 90%;
 }
 .team-pic{
   height: 300px;
@@ -10,4 +10,8 @@
 }
 .team-btn:hover{
   background-color: #37474F;
+}
+#section1{
+  background-color: #d3353e;
+  font-size: 1.4em;
 }
