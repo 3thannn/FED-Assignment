@@ -191,3 +191,9 @@ $( "#golfers" ).click(function() {
 $( "#clubs" ).click(function() {
   window.location.hash = "#section5";
 });
+$(".introduction-img").mouseenter(function(){
+  $(this).animate({height:"20em",width:"auto"});
+});
+$(".introduction-img").mouseleave(function(){
+  $(this).animate({height:"350px",width:"auto"});
+});
