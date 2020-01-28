@@ -72,6 +72,9 @@ header .overlay {
 #section4{
   background-color: #110705;
 }
+#section5{
+  height: 700px;
+}
 #section5-1{
   height: 500px;
 }
@@ -97,4 +100,8 @@ header .overlay {
 }
 .s41-img{
   height: 300px;
+}
+th{
+  font-weight: bold;
+  border-right:1px solid gray;
 }
