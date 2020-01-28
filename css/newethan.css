@@ -118,6 +118,14 @@ object-fit: cover;
   text-align:left;
   font-size: 18px;
 }
+.carousel-item img{
+  object-fit: cover;
+  height: 500px;
+}
+.locationtitle, .locationtext{
+  text-align: right;
+}
+
 .title-arch {
   text-align: center;
   margin: 50px 0;
