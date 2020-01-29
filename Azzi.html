@@ -21,42 +21,13 @@
   <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
   <!-- Font awesome -->
   <script src="https://kit.fontawesome.com/81978a7522.js" crossorigin="anonymous"></script>
-
+  <script src="vendor/w3.js"></script>
 </head>
 
 <body>
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky">
-    <div class="container">
-      <a class="navbar-brand" href="#">Sports In Singapore</a>
-      <a href="#About" onclick="hello()">  <span class="navbar-toggler-icon"></span></a>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#About">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">History</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Locations</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
+<div w3-include-HTML="header.html"></div>
   <!-- Landing Page -->
-  <section>
+
     <header>
       <div class="overlay"></div>
       <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
@@ -71,7 +42,6 @@
         </div>
       </div>
     </header>
-  </section>
 
   <!-- Info -->
 <section class = "section1" id = "section1">
@@ -109,7 +79,7 @@
           <div class="col-sm">
             <div class="card-header" id="headingOne">
               <h5 class="mb-0">
-                <button style="text-decoration: none;" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                <button id="animation" style="text-decoration: none;" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                   <h1><span style="color:black">Swimming <span style="color:Red"> Athletes</h1>
                 </button>
               </h5>
@@ -118,7 +88,7 @@
           <div class="col-sm">
             <div class="card-header" id="headingTwo">
               <h5 class="mb-0">
-                <button style="text-decoration: none;" "text-decoration: none;" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <button id="animation" style="text-decoration: none;" "text-decoration: none;" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                   <h1><span style="color:black">Football <span style="color:Red"> Athletes</h1>
                 </button>
               </h5>
@@ -127,7 +97,7 @@
           <div class="col-sm">
             <div class="card-header" id="headingThree">
               <h5 class="mb-0">
-                <button style="text-decoration: none;" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <button id="animation" style="text-decoration: none;" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                   <h1><span style="color:black">Silat <span style="color:Red"> Athletes</h1>
                 </button>
               </h5>
@@ -135,35 +105,6 @@
           </div>
         </div>
         <br />
-        <div class="row">
-          <div class="col-sm">
-            <div class="card-header" id="headingOne">
-              <h5 class="mb-0">
-                <button style="text-decoration: none;" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                  <h1><span style="color:black">Archery <span style="color:Red"> Athletes</h1>
-                </button>
-              </h5>
-            </div>
-          </div>
-          <div class="col-sm">
-            <div class="card-header" id="headingTwo">
-              <h5 class="mb-0">
-                <button style="text-decoration: none;" "text-decoration: none;" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  <h1><span style="color:black">Sepak Takraw <span style="color:Red"> Athletes</h1>
-                </button>
-              </h5>
-            </div>
-          </div>
-          <div class="col-sm">
-            <div class="card-header" id="headingThree">
-              <h5 class="mb-0">
-                <button style="text-decoration: none;" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  <h1><span style="color:black">Badminton <span style="color:Red"> Athletes</h1>
-                </button>
-              </h5>
-            </div>
-          </div>
-        </div>
       </div>
       <br/>
       <br />
@@ -364,7 +305,7 @@
                     <h6>Date of Birth</h6><p>25 February, 1991</p>
                     <h6>Gender</h6><p>Female</p>
                     <h6>Basic Information</h6>
-                    <p class="card-text" align="justify">I started getting interested in Silat when I watched my brother fight. That was when I knew I wanted to compete and prove that girls can fight just as well as the boys can.</p>
+                    <p class="card-text" align="justify">I started getting interested in Silat when I watched my brother fight. That was when I knew I wanted to compete and prove that girls can fight just as well as the boys can, Graduated from Ngee Ann Poly</p>
                     <br />
                     <br />
                     <br />
@@ -449,7 +390,67 @@
 </section>
 </div>
 <section class = "section">
-<h1>salakau</h1>
+  <div class="container">
+
+    <form class="form">
+      <h1 class="animatedline anim-typewriter">Quiz Time</h1>
+      <br />
+      <br />
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputname">Name:</label>
+      <input type="email" class="form-control" id="inputname" placeholder="Please enter your name">
+    </div>
+    <div class="form-group col-md-6">
+    <label for="exampleInputEmail1">Email address:</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+  </div>
+  <div class="form-row">
+  <div class="form-group col-md-6">
+    <label for="qn1">1) Who won 2017 SEA Games, Male 50m Butterfly - Gold.</label><br>
+    <input type="radio" name="athlete" value="joseph"> Joseph Isaac Schooling <br>
+    <input type="radio" name="athlete" value="natasha"> Ong Min Ern Natasha <br>
+    <input type="radio" name="athlete" value="samantha"> Samantha Louisa Yeo Ginn <br>
+    <input type="radio" name="athlete" value="fandi"> Fandi Ahmad <br>
+  </div>
+  <div class="form-group col-md-6">
+    <label for="qn2">2) Who became a coach.  </label><br>
+    <input type="radio" name="athlete" value="irfan"> Irfan Fandi Ahmad <br>
+    <input type="radio" name="athlete" value="ikhsan"> Ikhsan Fandi Ahmad <br>
+    <input type="radio" name="athlete" value="fandi"> Fandi Ahmad <br>
+    <input type="radio" name="athlete" value="safuwan"> Safuwan Baharudin <br>
+  </div>
+</div>
+<div class="form-row">
+  <div class="form-group col-md-6">
+    <label for="qn3">3) Which of the pesilat is from Ngee Ann Poly</label>
+    <select class="form-control" name="athlete" id="qns3" required>
+      <option>Nurul Suhaila</option>
+      <option>Siti Khadijah</option>
+      <option>Sheik Ferdous</option>
+      <option>Muhamad Nur Alfian</option>
+    </select>
+  </div>
+  <div class="form-group col-md-6">
+    <label for="qn4">4) Who was starred in Fifa 15</label>
+    <select class="form-control" name="athlete" id="qns4" required>
+      <option>Irfan Fandi Ahmad</option>
+      <option>Ikhsan Fandi Ahmad</option>
+      <option>Fandi Ahmad</option>
+      <option>Safuwan Baharudin</option>
+    </select>
+  </div>
+</div>
+<br />
+  <div class="form-group">
+<button type="submit" class="btn btn-danger">Submit</button>
+<button type="reset" class="btn btn-danger">Reset</button>
+  </div>
+
+</form>
+  </div>
 </section>
 
 
@@ -458,6 +459,9 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <div w3-include-HTML="footer.html"></div>
 </body>
-
+<script>
+ w3.includeHTML();
+</script>
 </html>

@@ -4,19 +4,19 @@ $(".event-info").hide();
 //Listening function
 
 //Upcoming Events
-$("#swimming-btn").click(function(){
-  $("#swimming-pic").slideToggle();
-  $("#swimming-info").fadeToggle();
+$("#suhaila-btn").click(function(){
+  $("#suhaila-pic").slideToggle();
+  $("#suhaila-info").fadeToggle();
 });
 
-$("#yoga-btn").click(function(){
-  $("#yoga-pic").slideToggle();
-  $("#yoga-info").fadeToggle();
+$("#irfan-btn").click(function(){
+  $("#irfan-pic").slideToggle();
+  $("#irfan-info").fadeToggle();
 });
 
-$("#esports-btn").click(function(){
-  $("#esports-pic").slideToggle();
-  $("#esports-info").fadeToggle();
+$("#joseph-btn").click(function(){
+  $("#joseph-pic").slideToggle();
+  $("#joseph-info").fadeToggle();
 });
 
 //iframe
