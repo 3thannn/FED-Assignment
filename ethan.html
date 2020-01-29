@@ -19,36 +19,9 @@
   <body>
     <div class="row">
       <div class="col-12">
-        <!--Header Navbar-->
+        <div w3-include-HTML="header.html"></div>
       </div>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky">
-      <div class="container">
-        <a class="navbar-brand" href="#">Sports In Singapore</a>
-        <a href="#About" onclick="hello()">  <span class="navbar-toggler-icon"></span></a>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#About">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">History</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Locations</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
       <section id ="quote" style="height:100%; width: 100%; padding-top: 0px; padding-bottom: 0px; margin: 0px">
           <div class="videoContainer">
               <video autoplay loop muted>
@@ -283,77 +256,67 @@
     <br />
     <br />
     <br />
-    <div class="container">
-      <!-- Trigger the modal with a button -->
-      <h style="font-size: 25px;">Take this small quiz to help us get to know you better! &nbsp;</h>
-      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Click Me!</button>
-      <br />
-      <br />
-      <!-- Modal -->
-      <div id="myModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-    <!-- Modal content-->
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title">Help us get to know you better!</h4><button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <label class="radio">
-                Do You own a pair of running shoes:
-                  <input type="radio" id="shoes1" name ="ownshoes" value="yes" />
-                  Yes
-              </label>
-              <label class ="radio">
-                  <input type ="radio" id="shoes2" name ="ownshoes" value="no" />
-                  No
-              </label>
-              <label class="radio">
-                How often do you run a month:
-                <br />
-                <input type="radio" id="run1" name="oftenrun" value=1 />
-                Once
-              </label>
-              <br />
-              <label class="radio">
-                <input type="radio" id="run2" name ="oftenrun" value=2 />
-                More than once
-              </label>
-              <br />
-              <label class="radio">
-                <input type="radio" id="run3" name ="oftenrun" value=3 />
-                More than once a week
-              </label>
-              <br />
-              <label class="radio">
-                <input type="radio" id="run4" name ="oftenrun" value=4 />
-                Not at all
-              </label>
-              <br />
-              <label class="number">
-                Distance Per Run (KM):
-                <input type="number" id="rundist" name="distance" />
-              </label>
-              <label class="radio">
-                Would you recommend running as a daily/weekly routine to other people?
-                <br />
-                <input type="radio" id="recommend1" name="recommend" value="yes" />
-                Yes
-              </label>
-              <label class="radio">
-                <input type="radio" id="recommend2" name="recommend" value="no" />
-                no
-              </label>
 
-            </form>
-          </div>
-          <div class="modal-footer">
-            <input id="mySubmit" type="Submit" value="Submit" class="btn btn-success" data-dismiss="modal" >
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+    <div class="container" id="modal">
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+        Help us to get to know you better!
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Question Air</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form onsubmit="return CheckFormFilled()">
+                <div class="form-row" id="question1">
+                  <div class="col-md-12">
+                    <label for="shoes">Do you own a pair of shoes?</label> <br>
+                    <input type="radio" name="shoes" value="shoe-yes"> Yes <br>
+                    <input type="radio" name="shoes" value="shoe-no"> No <br>
+                  </div>
+                </div>
+                <hr>
+                <div class="form-row" id="question2">
+                  <div class="col-md-12">
+                    <label for="shoes">How often do you run?</label> <br>
+                    <input type="radio" name="frequence-run" value="1"> Once <br>
+                    <input type="radio" name="frequence-run" value="2"> More than once  <br>
+                    <input type="radio" name="frequence-run" value="3"> More than once a week <br>
+                    <input type="radio" name="frequence-run" value="4"> Not at all <br>
+                  </div>
+                </div>
+                <hr>
+                <div class="form-row" id="question3">
+                  <div class="col-md-12">
+                    <label for="shoes">Distance per run(KM)?</label> <br>
+                    <input type="number" name="rundist" value="0">
+                  </div>
+                </div>
+                <hr>
+                <div class="form-row" id="question4">
+                  <div class="col-md-12">
+                    <label for="shoes">Would you recommend running as a daily/weekly routine to other people?</label> <br>
+                    <input type="radio" name="frequence-run" value="yes"> Yes <br>
+                    <input type="radio" name="frequence-run" value="No"> No <br>
+                  </div>
+                </div>
+                <hr>
+            </div>
+              <div class="modal-footer">
+                <input type="submit" name="submit" value="submit" class="btn btn-success w-25">
+                <input type="reset" name="reset" value="reset" class="btn btn-danger w-25 mr-auto">
+              </div>
+              </form>
           </div>
         </div>
       </div>
-    </div>
     </div>
     <div>
       <p id="formcontent" style ="text-align:center; color:green; font-size: 23px;">
