@@ -8,12 +8,6 @@ var displaysec4 = false;
 //Quiz var
 var QuestionArray = [];
 
-//Preload function
-$("#section4-1").hide();
-$("#section5-1").hide();
-HideAllGolfers();
-IncreasingNumbers();
-
 //Function =================================
 
 //Increasing numbers
@@ -178,6 +172,14 @@ function quizValidation(){
 }
 //End of quiz
 
+// End of Function =================================
+
+//Preload function
+$("#section4-1").hide();
+$("#section5-1").hide();
+HideAllGolfers();
+IncreasingNumbers();
+
 //Listening Function
 $("#Dickson-Quiz").submit(function(){
   return false;
@@ -196,4 +198,26 @@ $(".introduction-img").mouseenter(function(){
 });
 $(".introduction-img").mouseleave(function(){
   $(this).animate({height:"350px",width:"auto"});
+});
+$("#map1").click(function(){
+  $("#iframe-map").attr('src', "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.401157315376!2d103.87021589147011!3d1.293059059852383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da18547a193767%3A0xc2448b1f729923e!2sMarina%20Bay%20Golf%20Course!5e0!3m2!1sen!2ssg!4v1580331951662!5m2!1sen!2ssg");
+});
+$("#map2").click(function(){
+  $("#iframe-map").attr('src', "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.6263277350054!2d103.80675261475406!3d1.400582398978534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da3c3b81e04209%3A0x99a688cdca67ea90!2sMandai%20Executive%20Golf%20Course!5e0!3m2!1sen!2ssg!4v1580333326722!5m2!1sen!2ssg");
+});
+$("#map3").click(function(){
+  $("#iframe-map").attr('src', "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.640901921308!2d103.98266031525579!3d1.3919933618251106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da3c170e12eab7%3A0x8483fdafe307904a!2sChangi%20Golf%20Club!5e0!3m2!1sen!2ssg!4v1580333418230!5m2!1sen!2ssg");
+});
+$("#map4").click(function(){
+  $("#iframe-map").attr('src', "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.718159537952!2d103.7935889152559!3d1.3455478119628332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da109539d0a2e1%3A0xe82ee35a5d4d42e!2sChampions%20Public%20Golf%20Course!5e0!3m2!1sen!2ssg!4v1580333459952!5m2!1sen!2ssg");
+});
+$("#map5").click(function(){
+  $("#iframe-map").attr('src', "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.597864970429!2d103.81336951525566!3d1.417206361748874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da13f412586213%3A0xdf37e5def2503c5a!2sSembawang%20Country%20Club!5e0!3m2!1sen!2ssg!4v1580333502427!5m2!1sen!2ssg");
+});
+$("#map6").click(function(){
+  $("#iframe-map").attr('src', "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.843098849306!2d103.8052567152561!3d1.2668393621881904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1be8414207d9%3A0x3c1468c27bb2eba5!2sKeppel%20Club!5e0!3m2!1sen!2ssg!4v1580333642665!5m2!1sen!2ssg");
+});
+google.maps.event.addListener(marker,'click',function() {
+  map.setZoom(9);
+  map.setCenter(marker.getPosition());
 });

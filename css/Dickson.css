@@ -90,6 +90,10 @@ header .overlay {
   object-fit: cover;
   padding-top: 10px;
 }
+#iframe-map{
+  width: 100%;
+  height: 500px;
+}
 #s3-quote{
   padding-top: 10%;
   padding-left: 5%;
@@ -104,4 +108,7 @@ header .overlay {
 th{
   font-weight: bold;
   border-right:1px solid gray;
+}
+#q1-c, #q2-c, #q3-c, #q4-c{
+  color: red;
 }

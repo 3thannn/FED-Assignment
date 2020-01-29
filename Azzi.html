@@ -392,14 +392,14 @@
 <section class = "section">
   <div class="container">
 
-    <form class="form">
+    <form class="form" onsubmit="return CheckQuiz()">
       <h1 class="animatedline anim-typewriter">Quiz Time</h1>
       <br />
       <br />
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="inputname">Name:</label>
-      <input type="email" class="form-control" id="inputname" placeholder="Please enter your name">
+      <input type="text" class="form-control" id="inputname" placeholder="Please enter your name">
     </div>
     <div class="form-group col-md-6">
     <label for="exampleInputEmail1">Email address:</label>
@@ -417,10 +417,10 @@
   </div>
   <div class="form-group col-md-6">
     <label for="qn2">2) Who became a coach.  </label><br>
-    <input type="radio" name="athlete" value="irfan"> Irfan Fandi Ahmad <br>
-    <input type="radio" name="athlete" value="ikhsan"> Ikhsan Fandi Ahmad <br>
-    <input type="radio" name="athlete" value="fandi"> Fandi Ahmad <br>
-    <input type="radio" name="athlete" value="safuwan"> Safuwan Baharudin <br>
+    <input type="radio" name="athletes" value="irfan"> Irfan Fandi Ahmad <br>
+    <input type="radio" name="athletes" value="ikhsan"> Ikhsan Fandi Ahmad <br>
+    <input type="radio" name="athletes" value="fandi"> Fandi Ahmad <br>
+    <input type="radio" name="athletes" value="safuwan"> Safuwan Baharudin <br>
   </div>
 </div>
 <div class="form-row">
@@ -445,8 +445,8 @@
 </div>
 <br />
   <div class="form-group">
-<button type="submit" class="btn btn-danger">Submit</button>
-<button type="reset" class="btn btn-danger">Reset</button>
+    <input type="submit" name="" value="Submit" class="btn btn-danger">
+    <input type="reset" name="" value="Reset" class="btn btn-danger">
   </div>
 
 </form>
@@ -459,6 +459,9 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js\Azzi.js">
+
+  </script>
   <div w3-include-HTML="footer.html"></div>
 </body>
 <script>
