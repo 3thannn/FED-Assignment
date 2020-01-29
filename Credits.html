@@ -13,6 +13,10 @@
     <script src="https://kit.fontawesome.com/81978a7522.js" crossorigin="anonymous"></script>
   </head>
   <body>
+    <section id="navbar">
+  	   <div w3-include-HTML="header.html"></div>
+    </section>
+
     <section class="bg-warning">
       <br><br>
       <div class="container-fluid" id="team-card">
@@ -78,7 +82,7 @@
       <div class="row">
         <div class="col-md-2"></div>
         <h1 class="section-header text-center col-md-8">Sections done</h1>
-        <button type="button" class="close col-md-2" aria-label="Close" id="close"> 
+        <button type="button" class="close col-md-2" aria-label="Close" id="close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -315,8 +319,15 @@
         </div>
       </div>
     </section>
+
+    <section id="footer">
+  	   <div w3-include-HTML="footer.html"></div>
+    </section>
   </body>
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/w3.js">
+    w3.includeHTML();
+  </script>
   <script src="js\credits.js"></script>
 </html>
