@@ -94,14 +94,16 @@ header .overlay {
   display:inline-block;
   text-align: center;
   background: white;
-  margin-left: 45%;
+  margin-left: 44%;
   border-top: 5px solid red;
-
 }
 
 .title h1{
     font-family: 'Bangers', cursive;
-
+    padding-left: 10px;
+    padding-right: 15px;
+    left:50%;
+    top: 50%
 }
 
 
@@ -110,6 +112,7 @@ header .overlay {
   background-image:url("https://i.imgur.com/sNhKMZ0.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
+  width:auto;
 
 
 }
