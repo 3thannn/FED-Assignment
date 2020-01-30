@@ -292,54 +292,77 @@
     <section>
         <h1 class="text-center">Quiz Time!</h1>
         <form class="container">
-            <fieldset>
-                <legend>Personal Particulars</legend>
-                <p>If you want to be contacted, add your personal particulars here!</p>
-                <label class="contact" for="name">Name:</label>
-                <input type="text" id="name" onchange="Salutations()" /><br />
-                <label class="contact" for="contact">Contact Number:</label>
-                <input type="number" id="contact" pattern="[6,8,9]{1}+[0-9]{7}" onchange="Salutations()" /><br />
-                <label class="contact" for="email">Email Address:</label>
-                <input type="email" id="email" onchange="Salutations()" /><br />
-                <label class="contact" for="gender">Gender:</label>
-                <select id="gender">
-                    <option value="U" onselect="Salutations()"></option>
-                    <option value="M" onselect="Salutations()">Male</option>
-                    <option value="F" onselect="Salutations()">Female</option>
-                </select><br />
-                <label for="age">Year of birth:</label>
-                <input type="number" id="age" maxlength="4" onchange="Salutations()" />
+            <fieldset class="container w-75">
+              <legend>Personal Particulars</legend>
+              <p>If you want to be contacted, add your personal particulars here!</p>
+                <div class="form-row">
+                  <div class="col-md">
+                    <label class="contact" for="name">Name:</label>
+                    <input type="text" id="name" onchange="Salutations()" class="form-control" /><br />
+                  </div>
+                  <div class="col-md">
+                    <label class="contact" for="contact">Contact Number:</label>
+                    <input type="number" id="contact" pattern="[6,8,9]{1}+[0-9]{7}" onchange="Salutations()" class="form-control" /><br />
+                  </div>
+                  <div class="col-md">
+                    <label class="contact" for="email">Email Address:</label>
+                    <input type="email" id="email" onchange="Salutations()"  class="form-control"/><br />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md">
+                    <label class="contact" for="gender">Gender:</label>
+                    <select id="gender"  class="form-control">
+                        <option value="U" onselect="Salutations()"></option>
+                        <option value="M" onselect="Salutations()">Male</option>
+                        <option value="F" onselect="Salutations()">Female</option>
+                    </select><br />
+                  </div>
+                  <div class="col-md">
+                    <label for="age">Year of birth:</label>
+                    <input type="number" id="age" maxlength="4" onchange="Salutations()"  class="form-control"/>
+                  </div>
+                </div>
             </fieldset>
             <p class="text-danger" id="salutations"></p>
-            <fieldset>
-                <legend>Quiz</legend>
-                <p>Here's a few questions testing your understanding of swimming in Singapore. Have fun!</p>
-                <label for="Q1">Q1: How many types of swimming are common in the Olympics?</label><br />
-                <input type="radio" name="Q1" value=0 required /> 1<br />
-                <input type="radio" name="Q1" value=0 /> 2<br />
-                <input type="radio" name="Q1" value=0 /> 3<br />
-                <input type="radio" name="Q1" value=1 /> 4<br /><br />
-
-                <label for="Q2">Q2: Which Olympian clinched Singapore's first Olympic gold medal in 2016?</label><br />
-                <input type="radio" name="Q2" value=1 required /> Joseph Schooling<br />
-                <input type="radio" name="Q2" value=0 /> Quah Zheng Wen<br />
-                <input type="radio" name="Q2" value=0 /> Quah Ting Wen<br />
-                <input type="radio" name="Q2" value=0 /> Quah Jing Wen<br /><br />
-
-                <label for="Q3">Q3: How many swimming complexes are operated by ActiveSG currently?</label><br />
-                <input type="radio" name="Q3" value=0 required /> 14<br />
-                <input type="radio" name="Q3" value=0 /> 22<br />
-                <input type="radio" name="Q3" value=1 /> 27<br />
-                <input type="radio" name="Q3" value=0 /> 30<br /><br />
-
-                <label for="Q4">Q4: Which athlete was affectionally known as the "Flying Fish" in Singapore?</label><br />
-                <input type="radio" name="Q4" value=0 /> Joseph Schooling<br />
-                <input type="radio" name="Q4" value=1 /> Ang Peng Siong<br />
-                <input type="radio" name="Q4" value=0 /> Tao Li<br />
-                <input type="radio" name="Q4" value=0 /> Darren Chua<br /><br />
+            <fieldset class="container w-75">
+              <p>Here's a few questions testing your understanding of swimming in Singapore. Have fun!</p>
+              <legend>Quiz</legend>
+              <div class="form-row">
+                <div class="form-check col">
+                  <label for="Q1" class="form-check-label">Q1: How many types of swimming are common in the Olympics?</label><br />
+                  <input type="radio" name="Q1" value=0 required /> 1<br />
+                  <input type="radio" name="Q1" value=0 /> 2<br />
+                  <input type="radio" name="Q1" value=0 /> 3<br />
+                  <input type="radio" name="Q1" value=1 /> 4<br /><br />
+                </div>
+                <div class="form-check col">
+                  <label for="Q2" class="form-check-label">Q2: Which Olympian clinched Singapore's first Olympic gold medal in 2016?</label><br />
+                  <input type="radio" name="Q2" value=1 required /> Joseph Schooling<br />
+                  <input type="radio" name="Q2" value=0 /> Quah Zheng Wen<br />
+                  <input type="radio" name="Q2" value=0 /> Quah Ting Wen<br />
+                  <input type="radio" name="Q2" value=0 /> Quah Jing Wen<br /><br />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-check col">
+                  <label for="Q3" class="form-check-label">Q3: How many swimming complexes are operated by ActiveSG currently?</label><br />
+                  <input type="radio" name="Q3" value=0 required /> 14<br />
+                  <input type="radio" name="Q3" value=0 /> 22<br />
+                  <input type="radio" name="Q3" value=1 /> 27<br />
+                  <input type="radio" name="Q3" value=0 /> 30<br /><br />
+                </div>
+                <div class="form-check col">
+                  <label for="Q4">Q4: Which athlete was affectionally known as the "Flying Fish" in Singapore?</label><br />
+                  <input type="radio" name="Q4" value=0 /> Joseph Schooling<br />
+                  <input type="radio" name="Q4" value=1 /> Ang Peng Siong<br />
+                  <input type="radio" name="Q4" value=0 /> Tao Li<br />
+                  <input type="radio" name="Q4" value=0 /> Darren Chua<br /><br />
+                </div>
+              </div>
+              <input type="button" value="Submit" onclick="Marker()" class="btn btn-success" />
+              <input type="reset" class="btn btn-danger" />
             </fieldset>
-            <input type="reset" />
-            <input type="button" value="Submit" onclick="Marker()" />
             <p></p>
         </form>
         <br />

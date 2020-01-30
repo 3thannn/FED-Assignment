@@ -55,8 +55,8 @@ header .overlay {
 
 /*====================Section 1 ====================*/
 
-.section1{
-
+.card-img-top{
+  object-fit: cover;
 }
 
 #section1{
