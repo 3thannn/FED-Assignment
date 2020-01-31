@@ -29,12 +29,15 @@ html{
 }
 .landingjumbotron{
   height:25vh;
-
 }
-
 .landingdiv{
   height:50vh;
   padding-top: 50px;
+}
+@media (pointer: coarse) and (hover: none)  {
+  .landingdiv {
+    padding-bottom: 500px;
+  }
 }
 
 .itemheader {
@@ -203,4 +206,8 @@ opacity: 1;
 .project:hover .project-hover hr {
 width: 100%;
 height: 5px;
+}
+#moreinfo{
+  padding-top: 200px;
+  position: initial;
 }
