@@ -1,4 +1,9 @@
 /*==================== Header ====================*/
+
+section {
+    font-family: 'Roboto', sans-serif;
+}
+
 header {
     position: relative;
     background-color: black;
